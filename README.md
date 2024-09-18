@@ -32,11 +32,11 @@ To get started, you will need **Python 3.7** and the dependencies listed in `req
 
 ### Step 1: Clone the repository
 ```bash``` 
-git clone https://github.com/yourusername/cinet-pedestrian-prediction.git
-cd cinet-pedestrian-prediction
+git clone https://github.com/Jayzhou3219/CINet-main.git
+cd CInet-pedestrian-prediction
 
 ### Step 2: Install dependencies
-```bash```
+
 pip install -r requirement.txt
 
 ## 📝 Usage
