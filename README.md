@@ -33,7 +33,7 @@ To get started, you will need **Python 3.7** and the dependencies listed in `req
 ### Step 1: Clone the repository
 ```bash``` 
 git clone https://github.com/Jayzhou3219/CINet-main.git
-cd CInet-pedestrian-prediction
+<br />cd CInet-pedestrian-prediction
 
 ### Step 2: Install dependencies
 
@@ -44,16 +44,16 @@ pip install -r requirement.txt
 ### -Training
 To train the CINet model, use the following command:
 
-python main.py --train --dataset <dataset_name>
+<br />python main.py --train --dataset <dataset_name>
 
-Replace <dataset_name> with the dataset you want to train on (e.g., ETH, UCY, SDD).
+<br />Replace <dataset_name> with the dataset you want to train on (e.g., ETH, UCY, SDD).
 
 ### -Testing
- You can evaluate the model using the following command:
+You can evaluate the model using the following command:
  
-python main.py --test --dataset <dataset_name> --checkpoint <path_to_model_checkpoint>
+<br />python main.py --test --dataset <dataset_name> --checkpoint <path_to_model_checkpoint>
 
-Replace <path_to_model_checkpoint> with the path to your saved model.
+<br />Replace <path_to_model_checkpoint> with the path to your saved model.
 
 
 
