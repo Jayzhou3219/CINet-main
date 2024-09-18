@@ -1,38 +1,56 @@
-# Completed Interaction Network for Pedestrian Trajectory Prediction
+# 🚶 Completed Interaction Networks for Pedestrian Trajectory Prediction
 
-This repository contains the implementation of the CINet model, which is designed for pedestrian trajectory prediction by integrating social interactions, environmental interactions, and short-term goals into a unified framework.
+![CINet](https://via.placeholder.com/1000x300.png) <!-- 你可以用自己的图片链接替换这张图片 -->
 
-## Table of Contents
+This repository contains the official implementation of **CINet**, a novel approach for pedestrian trajectory prediction that considers social interactions in all moments, environmental interactions, and short-term goals in a unified framework. Thanks to my tutor for his great support.
+
+## 📑 Table of Contents
 - [Introduction](#introduction)
-- [Installation](#installation)
-- [Running the Code](#running-the-code)
-- [Ablation Studies](#ablation-studies)
-- [Results and Evaluation](#results-and-evaluation)
-- [Citation](#citation)
-- [License](#license)
+- [🚀 Features](#features)
+- [⚙️ Installation](#installation)
+- [📝 Usage](#usage)
+  - [Training](#training)
+  - [Testing](#testing)
+- [🔍 Ablation Studies](#ablation-studies)
+- [📊 Results](#results)
+- [📚 Citation](#citation)
+- [📞 Contact](#contact)
 
 ## Introduction
 
-CINet is a novel network architecture for pedestrian trajectory prediction. It simultaneously considers:
-- Social interactions across all time steps
-- Environmental interactions from scene semantic maps
-- Short-term goals for precise and reasonable trajectory predictions
+CINet integrates both social and environmental interactions for accurate pedestrian trajectory prediction, outperforming previous methods in various complex scenarios such as sharp turns or obstacle avoidance. The network utilizes a Spatio-Temporal Transformer Layer (STTL) to mine the spatio-temporal information of pedestrian trajectories, and a Gradual Goal Module (GGM) to capture environmental interactions under short-term goals.
 
-The model is evaluated on several benchmark datasets, including ETH/UCY, Stanford Drone Dataset (SDD), and inD, achieving state-of-the-art results.
+**Key contributions of CINet include:**
+- 🧑‍🤝‍🧑 Simultaneously modeling social interactions in all moments and environmental interactions.
+- 🎯 Utilizing short-term goals to guide predictions.
+- 🏆 Outperforming state-of-the-art methods on multiple public pedestrian trajectory datasets.
 
-## Installation
+## 🚀 Features
+- 📁 Supports **ETH/UCY**, **Stanford Drone Dataset (SDD)**, and **Intersection Drone Dataset (inD)**.
+- ✨ Implements **Spatio-Temporal Transformer Layer (STTL)** and **Gradual Goal Module (GGM)** for advanced trajectory prediction.
+- 🔧 Easily configurable for **ablation studies**.
 
-### Requirements
+## ⚙️ Installation
 
-- Python 3.7
-- PyTorch 1.13.1 with CUDA 11.7 support
+To get started, you will need **Python 3.7** and the dependencies listed in `requirement.txt`.
 
-To install the required dependencies, use the following commands:
-
+### Step 1: Clone the repository
 ```bash
-# Clone the repository
-git clone https://github.com/YourRepo/CINet.git
-cd CINet
+git clone https://github.com/yourusername/cinet-pedestrian-prediction.git
+cd cinet-pedestrian-prediction
 
-# Install Python dependencies
+### Step 2: Install dependencies
+```bash
 pip install -r requirement.txt
+
+The key dependencies include:
+
+torch (1.13.1+cu117)
+torchvision
+albumentations
+opencv-python
+pandas
+tqdm
+matplotlib
+wandb
+For full compatibility, ensure that the versions match those specified in the requirement.txt file.
