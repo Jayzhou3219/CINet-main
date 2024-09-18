@@ -1,0 +1,1 @@
+epoch,learning_rate,train_ADE_world,train_FDE_world,valid_ADE_world,valid_FDE_world,goal_BCE_loss,traj_MSE_loss
