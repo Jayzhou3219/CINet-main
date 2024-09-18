@@ -1,6 +1,6 @@
 # 🚶 Completed Interaction Networks for Pedestrian Trajectory Prediction
 
-![CINet](https://via.placeholder.com/1000x300.png) <!-- 你可以用自己的图片链接替换这张图片 -->
+![图片1](https://github.com/user-attachments/assets/74f695cf-7e9f-4f2f-9ca5-41551291af67) <!-- 你可以用自己的图片链接替换这张图片 -->
 
 This repository contains the official implementation of **CINet**, a novel approach for pedestrian trajectory prediction that considers social interactions in all moments, environmental interactions, and short-term goals in a unified framework. Thanks to my tutor for his great support.
 
@@ -11,10 +11,6 @@ This repository contains the official implementation of **CINet**, a novel appro
 - [📝 Usage](#usage)
   - [Training](#training)
   - [Testing](#testing)
-- [🔍 Ablation Studies](#ablation-studies)
-- [📊 Results](#results)
-- [📚 Citation](#citation)
-- [📞 Contact](#contact)
 
 ## Introduction
 
@@ -35,22 +31,31 @@ CINet integrates both social and environmental interactions for accurate pedestr
 To get started, you will need **Python 3.7** and the dependencies listed in `requirement.txt`.
 
 ### Step 1: Clone the repository
-```bash
+```bash``` 
 git clone https://github.com/yourusername/cinet-pedestrian-prediction.git
 cd cinet-pedestrian-prediction
 
-### **Step 2: Install dependencies**
-```bash
+### Step 2: Install dependencies
+```bash```
 pip install -r requirement.txt
 
-# The key dependencies include:
-# - torch (1.13.1+cu117)
-# - torchvision
-# - albumentations
-# - opencv-python
-# - pandas
-# - tqdm
-# - matplotlib
-# - wandb
+## 📝 Usage
 
-# For full compatibility, ensure that the versions match those specified in the requirement.txt file.
+### -Training
+To train the CINet model, use the following command:
+
+python main.py --train --dataset <dataset_name>
+
+Replace <dataset_name> with the dataset you want to train on (e.g., ETH, UCY, SDD).
+
+### -Testing
+ You can evaluate the model using the following command:
+ 
+python main.py --test --dataset <dataset_name> --checkpoint <path_to_model_checkpoint>
+
+Replace <path_to_model_checkpoint> with the path to your saved model.
+
+
+
+
+
