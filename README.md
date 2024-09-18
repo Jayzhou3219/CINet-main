@@ -39,18 +39,9 @@ To get started, you will need **Python 3.7** and the dependencies listed in `req
 git clone https://github.com/yourusername/cinet-pedestrian-prediction.git
 cd cinet-pedestrian-prediction
 
-### Step 2: Install dependencies
+### ⚙️ Step 2: Install dependencies
+
+To install the necessary dependencies for the project, run the following command in your terminal:
+
 ```bash
 pip install -r requirement.txt
-
-The key dependencies include:
-
-torch (1.13.1+cu117)
-torchvision
-albumentations
-opencv-python
-pandas
-tqdm
-matplotlib
-wandb
-For full compatibility, ensure that the versions match those specified in the requirement.txt file.
