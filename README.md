@@ -1,4 +1,4 @@
-# CINet: Completed Interaction Network for Pedestrian Trajectory Prediction
+# Completed Interaction Network for Pedestrian Trajectory Prediction
 
 This repository contains the implementation of the CINet model, which is designed for pedestrian trajectory prediction by integrating social interactions, environmental interactions, and short-term goals into a unified framework.
 
