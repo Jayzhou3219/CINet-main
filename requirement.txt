@@ -1,0 +1,16 @@
+# environment
+python==3.7
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+albumentations
+opencv-python
+pandas
+tqdm
+matplotlib
+wandb
+
+# notes:
+ablation studies sets:
+1)B+Spatial-SA: 请在parser.py中设置模型为ZJL,然后启用trianer.py43行zjl_serial
+2)B+Spatial-SA† (STTL)：请在parser.py中设置模型为ZJL,然后启用trianer.py44行zjl
+3)B+Spatial-SA†+G*(*代表使用long-term goal作为监督信息）：parser.py设置模型为ZJL_GOAL，然后启用trainer.py46行CINetr
+4)B+Spatial-SA†+GGM：parser.py设置模型为ZJL_GOAL,然后启用trainer.py第47行CINetv
